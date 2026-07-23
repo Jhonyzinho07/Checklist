@@ -70,13 +70,16 @@ esse arquivo (não precisa mexer no HTML nem no servidor). As imagens de referê
 
 ```
 checklist-teto-mercury/
-├── server.js               → servidor Express + geração de PDF (PDFKit)
-├── checklist-data.js        → estrutura do checklist (seções, perguntas, imagens)
-├── package.json
+├── server.js               → servidor Express + gerador de pastas por data e API
+├── pdf-generator.js        → lógica de montagem do PDF (PDFKit)
+├── checklist-data.js       → estrutura do checklist (seções, perguntas, imagens)
+├── package.json            → dependências do projeto (Express, PDFKit)
 ├── public/
-│   ├── index.html            → tela do formulário
-│   ├── style.css
-│   ├── script.js
-│   └── images/                → imagens de referência de cada item + logo
-└── checklists_preenchidos/    → PDFs gerados (criado automaticamente)
+│   ├── index.html          → tela do formulário (com suporte a PWA)
+│   ├── style.css           → estilos visuais
+│   ├── script.js           → lógica do wizard de etapas e comunicação
+│   ├── manifest.json       → manifesto PWA
+│   ├── sw.js               → Service Worker para funcionamento offline
+│   └── images/             → imagens de referência de cada item + logo + ícones PWA
+└── checklists_preenchidos/ → PDFs gerados organizados por pastas Ano/Mês
 ```
