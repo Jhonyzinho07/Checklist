@@ -1,0 +1,19 @@
+{
+  "name": "checklist-teto-mercury",
+  "version": "1.0.0",
+  "description": "App local de checklist de produção (Teto Mercury) com geração de PDF",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pdfkit": "^0.15.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
