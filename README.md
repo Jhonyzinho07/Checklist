@@ -38,13 +38,6 @@ Você verá uma mensagem como:
 
 Abra esse endereço no navegador (`http://localhost:3000`).
 
-### Acessando de outros dispositivos na mesma rede (tablet/celular no chão de fábrica)
-
-1. Descubra o IP do computador que está rodando o app (Windows: `ipconfig`, Mac/Linux: `ifconfig`
-   ou `ip addr`). Algo como `192.168.0.15`.
-2. No tablet/celular, acesse `http://192.168.0.15:3000` (mesma rede Wi-Fi/local).
-3. Se não conectar, verifique o firewall do computador (liberar a porta 3000).
-
 ## Uso
 
 1. Preencha os campos de identificação (N° do Teto, OP, Responsável, Crachá).
@@ -64,19 +57,7 @@ Todos os PDFs preenchidos ficam salvos localmente em:
 checklist-teto-mercury/checklists_preenchidos/
 ```
 
-Cada arquivo é nomeado como `Teto_Mercury_<numero_do_teto>_<data-hora>.pdf`, então nada é
-sobrescrito — cada preenchimento gera um arquivo novo.
-
-## Rodar sempre que ligar o computador (opcional)
-
-- **Windows**: crie um atalho para um arquivo `.bat` com o conteúdo:
-  ```
-  cd /d "C:\Checklists\checklist-teto-mercury"
-  npm start
-  ```
-  e coloque esse atalho na pasta de Inicialização do Windows.
-- **Mac/Linux**: pode usar `pm2` (`npm install -g pm2` e depois `pm2 start server.js`) para manter
-  o app rodando em segundo plano.
+Cada arquivo é nomeado como rigorosamente como `Teto_Mercury_<numero_do_teto>_<op>_<data-hora>.pdf`,garantindo que nada seja sobrescrito,cada preenchimento gera um arquivo novo.
 
 ## Personalizando o checklist
 
