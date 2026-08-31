@@ -1,3 +1,3 @@
 node_modules/
-checklists_preenchidos/*.pdf
+checklists_preenchidos/**/*.pdf
 server.log
