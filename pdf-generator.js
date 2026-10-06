@@ -47,7 +47,7 @@ function gerarPDF({ checklistData, cabecalho, respostas, observacoesExtra, outpu
       const numeroTeto = sanitizarNomeArquivo(cabecalho.numeroTeto);
       const op = sanitizarNomeArquivo(cabecalho.op);
       
-      // Novo nome do arquivo: Teto_Mercury_[N° do Teto]_[OP]_[Data].pdf
+      //nome do arquivo: Teto_Mercury_[N° do Teto]_[OP]_[Data].pdf
       const fileName = `Teto_Mercury_${numeroTeto}_${op}_${carimboData}.pdf`;     
       const filePath = path.join(outputDir, fileName);
 

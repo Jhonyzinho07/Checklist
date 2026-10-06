@@ -1,3 +1,4 @@
 node_modules/
 checklists_preenchidos/**/*.pdf
 server.log
+dist/

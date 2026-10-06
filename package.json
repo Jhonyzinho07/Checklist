@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "App local de checklist de produção (Teto Mercury) com geração de PDF",
   "main": "server.js",
+  "bin": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:exe": "caxa --input . --output dist/checklist-teto-mercury.exe --exclude dist checklists_preenchidos .git -- \"{{caxa}}/node_modules/.bin/node\" \"{{caxa}}/server.js\""
   },
   "dependencies": {
     "express": "^4.19.2",
@@ -14,6 +16,8 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "@yao-pkg/pkg": "^6.23.0",
+    "caxa": "^3.0.1",
     "nodemon": "^3.1.14"
   }
 }
