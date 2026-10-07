@@ -45,5 +45,21 @@
       "url": "/",
       "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
     }
+  ],
+  "screenshots": [
+    {
+      "src": "images/screenshot-desktop.png",
+      "sizes": "1603x903",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Visão Geral no Computador"
+    },
+    {
+      "src": "images/screenshot-mobile.png",
+      "sizes": "678x920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Visão Geral no Celular"
+    }
   ]
 }

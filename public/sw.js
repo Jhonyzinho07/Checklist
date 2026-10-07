@@ -1,5 +1,5 @@
 // Service Worker - Checklist Teto Mercury (PWA)
-const CACHE_NAME = 'teto-mercury-v4';
+const CACHE_NAME = 'teto-mercury-v5';
 
 const ASSETS_TO_CACHE = [
   '/',
@@ -10,6 +10,8 @@ const ASSETS_TO_CACHE = [
   '/images/logo.png',
   '/images/icon-192.png',
   '/images/icon-512.png',
+  '/images/screenshot-desktop.png',
+  '/images/screenshot-mobile.png',
   '/images/diag_21.png',
   '/images/diag_22.png',
   '/images/diag_23.png',
